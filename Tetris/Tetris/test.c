@@ -62,7 +62,7 @@ int main()
 			tempimage[i][j] = 0;
 		}
 	}
-	Welcome();//欢迎界面
+	//Welcome();//欢迎界面
 	Display(image);//显示游戏界面
 
 	//*****开始游戏！********************
@@ -178,7 +178,7 @@ int main()
 //欢迎界面
 void Welcome()
 {
-	printf("欢迎来到俄罗斯方块！");
+	printf("欢迎来到俄罗斯方块！\n");
 	system("pause");
 	system("cls\n");
 }
@@ -207,9 +207,9 @@ void Display(int binimage[20][10])
 		for (i = 0; i < 12; i++)
 		{
 			GotoXY(1, 22);
-			printf("SCORE:%d", score);
+			printf("score:%d", score);
 			GotoXY(1, 23);
-			printf("LEVEL=%d", score / 100);
+			printf("level=%d\n", score / 100);
 		}
 	}
 
