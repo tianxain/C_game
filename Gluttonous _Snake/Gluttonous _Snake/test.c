@@ -49,7 +49,7 @@ int speed;
 
 int main()
 {
-	system("color 0B");
+	system("color F0");
 	welcome();
 	creatgraph();
 	creatfood();
